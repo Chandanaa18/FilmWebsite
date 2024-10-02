@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Website-Profile Section</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="navlist">
+            <!--<li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../more.html">More</a></li> -->
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="../index.html" class="btn">Dashboard</a>
+            <a href="../login.html" class="btn" id="logoutButton">Logout</a>
+            <!--<a href="#" class="btn">Sign Up</a> -->
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h1>Manage Your Company Profile and Keep it Up-to-Date.</h1>
+            <p>In the profile management area, you can easily update your company information, profile picture, and
+                other relevant details.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <div class="about-content">
+            <h2 class="heading">Listings</h2>
+            <h3>Manage Your Active Listings</h3>
+            <p>View and Archive Your Active Listings.</p>
+        </div>
+
+        <div class="allServices">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Title of Your Listing</h3>
+                            <p>Filmmakers and advertisers can easily register and create profiles on our platform. This
+                                allows
+                                them to start connecting and exploring potential collaborators.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- display profile -->
+    <section class="user-info">
+        <h2>User Profile</h2>
+        <p>Username: <span id="username"></span></p>
+        <p>Email: <span id="email"></span></p>
+    </section>
+
+    <!-- add admin's dashboard buttton -->
+    <button id="fetchDashboard" style="display:none;">Fetch Admin Dashboard</button>
+    <pre id="dashboardData"></pre>
+
+    <footer>
+        <p>© 2023 Film Unite. All rights reserved.</p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up'></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <!-- profile.js -->
+    <script src="profile.js"></script>
+    <!-- script.js -->
+    <script src="../script.js"></script>
+
+   <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        // Fetch user details from localStorage
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+        // Check if user data exists
+        if (!storedUser) {
+            alert("No user found. Please log in.");
+            window.location.href = 'login.html'; // Redirect to login page if no user is found
+            return;
+        }
+
+        // Display email in the profile
+        document.getElementById('email').textContent = storedUser.email;
+
+        // Add logout button functionality
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+            alert('You have been logged out.');
+            window.location.href = 'login.html'; // Redirect to login page after logout
+        });
+
+        // Check account type and redirect accordingly
+        const accountType = storedUser.accountType;  // e.g., 'filmmaker' or 'bidder'
+        console.log("Account type:", accountType);  // For debugging
+
+        if (accountType === 'filmmaker') {
+            // Redirect to filmmaker dashboard
+            window.location.href = 'filmmaker_profile.html';
+        } else if (accountType === 'bidder') {
+            // Redirect to film bidder dashboard
+            window.location.href = 'filmbidder_profile.html';
+        } else {
+            alert("Invalid account type. Please log in again.");
+            window.location.href = 'login.html'; // Redirect if the account type is invalid
+        }
+    });
+</script>
+
+        // add click event listener for admin get dashboard
+        <script>
+        document.getElementById('fetchDashboard').addEventListener('click', async () => {
+            const token = localStorage.getItem('token'); // 从 localStorage 中获取 JWT 令牌
+
+            if (!token) {
+                alert('No token found. Please log in.');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:5000/api/admin/dashboard', {
+                    method: 'GET',
+                    headers: {
+                        'x-auth-token': token
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                document.getElementById('dashboardData').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error('Error fetching admin dashboard:', error);
+            }
+        });
+
+        let div = document.getElementById('portfolio-gallery');
+        let btn = document.getElementById('btn');
+
+        btn.onclick = function () {
+            if (div.className == 'clsB') {
+                div.className = 'clsA';
+                btn.innerHTML = 'View More'
+            }
+            else {
+                div.className = 'clsB';
+                btn.innerHTML = 'View Less';
+            }
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            cssMode: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                530: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 5,
+                },
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+
+</html>

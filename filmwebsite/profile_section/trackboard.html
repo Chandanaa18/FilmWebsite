@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertiser Dashboard</title>
+    <link rel="stylesheet" href="filmbidder_profile.css"> <!-- Assuming this CSS is the one used in Film Bidders page -->
+</head>
+<body>
+
+    <!-- Header section (replicated from Film Bidders page) -->
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#active-bids">Active Bids</a></li>
+            <li><a href="#past-bids">Past Bids</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="profile.html" class="btn">Profile</a>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <h1>Advertiser Dashboard</h1>
+
+        <!-- Summary Overview -->
+        <div class="summary">
+            <div class="summary-box">
+                <h3>Active Bids</h3>
+                <p id="active-bids-count">0</p>
+            </div>
+            <div class="summary-box">
+                <h3>Past Bids</h3>
+                <p id="past-bids-count">0</p>
+            </div>
+            <div class="summary-box">
+                <h3>Highest Bid Value</h3>
+                <p id="highest-bid-value">$0</p>
+            </div>
+        </div>
+
+        <!-- Active Bids Section -->
+        <section id="active-bids" class="bids-section">
+            <h2>Active Bids</h2>
+            <div class="bid-list" id="active-bids-list">
+                <!-- Active bids will be populated here -->
+            </div>
+        </section>
+
+        <!-- Past Bids Section -->
+        <section id="past-bids" class="bids-section">
+            <h2>Past Bids</h2>
+            <div class="bid-list" id="past-bids-list">
+                <!-- Past bids will be populated here -->
+            </div>
+        </section>
+    </section>
+
+    <!-- JavaScript to populate the bids dynamically -->
+    <script src="trackboard.js"></script>
+
+</body>
+</html>

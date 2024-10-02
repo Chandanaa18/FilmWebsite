@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Website-Film Maker Profile Section</title>
+    <link rel="stylesheet" href="filmmaker_profile.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+        <div class="right-header">
+            <!-- <a href="../index.html" class="btn">Dashboard</a>
+            <a href="#" class="btn">Sign Up</a> -->
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h1>Welcome Film Makers!</h1>
+            <p>Manage your listings and track your success with our film maker dashboard.</p>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+
+        <div class="about-content">
+            <h2 class="heading">Projects</h2>
+            <h3>Manage Your Project Listings</h3>
+            <p>View, Add, and Archive Your Active Listings.</p>
+        </div>
+
+        <div class="allServices">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- New listings will be dynamically added here -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // JavaScript for displaying listings
+        document.addEventListener('DOMContentLoaded', function() {
+            const listings = JSON.parse(localStorage.getItem('listings')) || [];
+            const swiperWrapper = document.querySelector('.swiper-wrapper');
+        
+            // Clear existing listings
+            swiperWrapper.innerHTML = '';
+        
+            // Loop through the stored listings and display them
+            listings.forEach(listing => {
+                const projectItem = `
+                    <div class="servicesItem swiper-slide">
+                        <div class="img-serv">
+                            <img src="img/blog/tucson.png" alt="Project Image"> <!-- Use a placeholder image or dynamic image if available -->
+                        </div>
+                        <h3>${listing.name}</h3> <!-- Display project name -->
+                        <p>${listing.description}</p> <!-- Display project description -->
+                        <a href="#" class="readMore">Read More</a>
+                    </div>`;
+                
+                swiperWrapper.innerHTML += projectItem; // Append the new item to the swiper wrapper
+            });
+        });
+        </script>
+        
+        
+        
+        
+
+    <section class="about" id="about">
+        <div class="hero-info">
+            <h1>Add a New Listing</h1>
+            <p>Easily create and manage your film project listings on our platform.</p>
+        </div>
+
+        <div class="btn-box">
+            <a href="add_listing.html" class="btn">Create New</a>
+            <a href="#" target="_blank" class="btn d-CV">Cancel</a>
+        </div>
+    </section>
+
+   
+    
+    <section class="user-profile" id="profile">
+        <h2>Film Maker Profile</h2>
+        
+        <!-- Form to Upload Videos and Portfolio Links -->
+        <form id="profile-form" enctype="multipart/form-data">
+            <div class="form-item">
+                <label for="video-upload">Upload Video (Trailer/Clips):</label>
+                <input type="file" id="video-upload" name="video-upload" accept="video/*">
+            </div>
+            
+            <div class="form-item">
+                <label for="portfolio-link">Portfolio Link:</label>
+                <input type="url" id="portfolio-link" name="portfolio-link" placeholder="https://yourportfolio.com">
+            </div>
+            
+            <div class="form-item">
+                <label for="filmography">Filmography:</label>
+                <textarea id="filmography" name="filmography" rows="5" placeholder="List your film projects..."></textarea>
+            </div>
+    
+            <button type="submit" class="btn">Save Profile</button>
+        </form>
+
+        <section class="down-box" id="contact">
+            <div class="contactSkills">
+                <div class="contact-info">
+                    <div class="main-text">
+                        <h2 class="heading">Contact Support</h2>
+                        <span>Need assistance? Contact our support team.</span>
+                    </div>
+    
+                    <form action="#">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea name="#" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <div class="check-box">
+                            <label><input type="checkbox" id="terms" name="terms"> I agree to the terms.</label>
+                        </div>
+    
+                        <div class="formBtn">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+
+    <footer>
+        <p>© 2023 Film Unite. All rights reserved.</p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <!-- <script src="profile.js"></script> -->
+    <script type="text/javascript">
+
+        // let div = document.getElementById('portfolio-gallery');
+        // let btn = document.getElementById('btn');
+
+        // btn.onclick = function(){
+        //     if (div.className == 'cls'){
+        //         div.className = '';
+        //         btn.innerHTML = 'View More'
+        //     }
+        //     else{
+        //         div.className = 'cls';
+        //         btn.innerHTML = 'View Less';
+        //     }
+        // }
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            cssMode: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                },
+                530: {
+                slidesPerView: 2,
+                },
+                768: {
+                slidesPerView: 3,
+                },
+                991: {
+                slidesPerView: 4,
+                },
+                1200: {
+                slidesPerView: 5,
+                },
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+</html>

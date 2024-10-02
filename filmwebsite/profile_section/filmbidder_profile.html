@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Website-Film Bidder Profile Section</title>
+    <link rel="stylesheet" href="filmbidder_profile.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+        <div class="right-header">
+            <!-- <a href="../index.html" class="btn">Dashboard</a>
+            <a href="#" class="btn">Sign Up</a> -->
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h1>Find Film Makers!</h1>
+            <p>Welcome to the Advertiser Dashboard. Connect with film makers and find the perfect projects for your advertising needs.</p>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+
+        <div class="about-content">
+            <h2 class="heading">Projects</h2>
+            <h3>Find Active Project Listings</h3>
+            <p>Browse through the available project listings.</p>
+        </div>
+        
+        <div class="allServices">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                        <div class="servicesItem swiper-slide">
+                            <div class="img-serv">
+                                <img src="img/blog/tucson.png" alt="">
+                            </div>
+                            <h3>Project Name</h3>
+                            <p>Short Project Description.</p>
+                            <a href="#" class="readMore">Read More</a>
+                        </div>
+        
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h1>Manage Your Bids with Ease and Confidence.</h1>
+            <p>The Advertiser Dashboard provides a comprehensive overview of your active and past bids, allowing you to stay on top of your advertising campaigns.</p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">View</a>
+                <a href="trackboard.html" target="_blank" class="btn d-CV">Track</a>
+            </div>
+        </div>
+
+        <div class="img-hero">
+            <img src="img/blog/tempe.png" alt="">
+        </div>
+    </section>
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Get in Touch</h2>
+                    <span>Have a question? Contact us directly from the dashboard.</span>
+                </div>
+
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="#" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <div class="check-box">
+                        <label><input type="checkbox" id="terms" name="terms"> I agree to the terms.</label>
+                    </div>
+
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <h2>Filter Projects</h2>
+        <form id="filter-form">
+            <div class="filter-item">
+                <label for="budget">Budget:</label>
+                <select id="budget" name="budget">
+                    <option value="">Select Budget</option>
+                    <option value="low">Below $10,000</option>
+                    <option value="medium">$10,000 - $50,000</option>
+                    <option value="high">Above $50,000</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="genre">Film Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="">Select Genre</option>
+                    <option value="action">Action</option>
+                    <option value="drama">Drama</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="documentary">Documentary</option>
+                    <option value="horror">Horror</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="duration">Duration of Placement:</label>
+                <select id="duration" name="duration">
+                    <option value="">Select Duration</option>
+                    <option value="short">Less than 1 week</option>
+                    <option value="medium">1 to 4 weeks</option>
+                    <option value="long">More than 4 weeks</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <button type="submit" class="btn">Apply Filters</button>
+            </div>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>© 2023 Film Unite. All rights reserved.</p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <!-- <script src="profile.js"></script> -->
+    <script type="text/javascript">
+
+        // let div = document.getElementById('portfolio-gallery');
+        // let btn = document.getElementById('btn');
+
+        // btn.onclick = function(){
+        //     if (div.className == 'cls'){
+        //         div.className = '';
+        //         btn.innerHTML = 'View More'
+        //     }
+        //     else{
+        //         div.className = 'cls';
+        //         btn.innerHTML = 'View Less';
+        //     }
+        // }
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            cssMode: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                },
+                530: {
+                slidesPerView: 2,
+                },
+                768: {
+                slidesPerView: 3,
+                },
+                991: {
+                slidesPerView: 4,
+                },
+                1200: {
+                slidesPerView: 5,
+                },
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+</html>
