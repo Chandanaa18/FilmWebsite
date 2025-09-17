@@ -26,10 +26,12 @@ It enables creators to pitch their movie ideas, receive bids for sponsorship or 
   - Future-ready to integrate secure logins, payments, and notifications.
 
 
-| ![Homepage]("C:\Users\chand\OneDrive\Pictures\Screenshots\Screenshot 2025-09-17 151112.png") | Homepage showcasing available options |
-| ![Pitch Idea]("C:\Users\chand\OneDrive\Pictures\Screenshots\Screenshot 2024-10-03 192838.png") | Pitching a movie/story idea |
-| ![Bidding]("C:\Users\chand\OneDrive\Pictures\Screenshots\Screenshot 2025-09-17 151544.png") | Bidder placing a bid on a film idea |
-| ![Tracking]("C:\Users\chand\OneDrive\Pictures\Screenshots\Screenshot 2025-09-17 151341.png") | Tracking system for active and past bids |
+| ![Homepage]<img width="1733" height="713" alt="Screenshot 2025-09-17 151112" src="https://github.com/user-attachments/assets/884798da-2330-46fa-8fa8-47227d8f8144" />
+ | Homepage showcasing available options |
+| ![Bidding] <img width="1700" height="619" alt="Screenshot 2025-09-17 151544" src="https://github.com/user-attachments/assets/5a3216ca-4a4c-497d-b11e-065c6c0f5a4a" />
+| Bidder placing a bid on a film idea |
+| ![Tracking]<img width="1809" height="602" alt="Screenshot 2025-09-17 151341" src="https://github.com/user-attachments/assets/9ee0330d-4a78-4dca-9291-0fadffcc0ebf" />
+| Tracking system for active and past bids |
 
 
 
